@@ -1,8 +1,8 @@
 # 7zr
 
 > Un archiveur de fichiers avec un haut taux de compression.
-> Similaire à `7z` sauf qu'il supporte que les fichiers `.7z`.
-> Plus d'informations : <https://www.7-zip.org>.
+> Similaire à `7z` sauf qu'il ne supporte que les fichiers 7z.
+> Plus d'informations : <https://manned.org/7zr>.
 
 - Compresse un fichier ou un dossier :
 
@@ -10,7 +10,7 @@
 
 - Chiffre une archive existante (en incluant les en-têtes) :
 
-`7zr a {{chemin/vers/archive_chiffree.7z}} -p{{password}} -mhe=on {{chemin/vers/archive.7z}}`
+`7zr a {{chemin/vers/archive_chiffree.7z}} -p{{password}} -mhe={{on}} {{chemin/vers/archive.7z}}`
 
 - Extrait une archive en conservant l'arborescence des fichiers :
 
@@ -28,6 +28,6 @@
 
 `7zr l {{chemin/vers/archive.7z}}`
 
-- Liste les types de compression disponible :
+- Définit le niveau de compression (plus il est élevé, plus la compression est importante, mais plus elle est lente) :
 
-`7zr i`
+`7zr a {{chemin/vers/archive.7z}} -mx={{0|1|3|5|7|9}} {{chemin/vers/fichier_ou_dossier}}`

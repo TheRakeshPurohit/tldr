@@ -2,7 +2,7 @@
 
 > Transfère des données depuis ou vers un serveur.
 > Accepte la plupart des protocoles, notamment HTTP, FTP et POP3.
-> Plus d'informations : <https://curl.se>.
+> Plus d'informations : <https://curl.se/docs/manpage.html>.
 
 - Télécharger le contenu d'une URL dans un fichier :
 
@@ -16,7 +16,7 @@
 
 `curl --fail --remote-name --location --continue-at - {{http://exemple.fr/nom_fichier}}`
 
-- Envoyer des données de formulaire encodées (requête POST de type `application/x-www-form-urlencoded`). Utiliser `--data @file_name` ou `--data @'-'` pour lire depuis STDIN :
+- Envoyer des données de formulaire encodées (requête POST de type `application/x-www-form-urlencoded`). Utiliser `--data @file_name` ou `--data @'-'` pour lire depuis `stdin` :
 
 `curl --data {{'nom=bob'}} {{http://exemple.fr/formulaire}}`
 
@@ -28,9 +28,9 @@
 
 `curl --data {{'{"nom":"bob"}'}} --header {{'Content-Type: application/json'}} {{http://exemple.fr/utilisateurs/1234}}`
 
-- Fournir un nom d'utilisateur et un mot de passe pour une authentification auprès du serveur :
+- Fournir un nom d'utilisateur et demander pour un mot de passe pour une authentification auprès du serveur :
 
-`curl --user identifiant:motdepasse {{http://exemple.fr}}`
+`curl --user {{identifiant}} {{http://exemple.fr}}`
 
 - Fournir le certificat et la clé du client pour une ressource, en évitant la validation du certificat :
 

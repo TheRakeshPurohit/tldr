@@ -1,7 +1,8 @@
 # pacman --upgrade
 
 > Arch Linux Paketverwaltungs-Werkzeug.
-> Weitere Informationen: <https://man.archlinux.org/man/pacman.8>.
+> Siehe auch: `pacman`.
+> Weitere Informationen: <https://manned.org/pacman.8>.
 
 - Installiere ein oder mehrere Pakete von Dateien:
 

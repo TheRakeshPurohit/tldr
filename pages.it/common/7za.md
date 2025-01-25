@@ -2,7 +2,7 @@
 
 > Archiviatore di file con alto fattore di compressione.
 > Versione standalone di `7z` con supporto a meno tipi di archivi.
-> Maggiori informazioni: <https://www.7-zip.org>.
+> Maggiori informazioni: <https://manned.org/7za>.
 
 - Archivia un file o una directory:
 
@@ -15,10 +15,6 @@
 - Archivia utilizzando uno specifico tipo di archivio:
 
 `7za a -t {{zip|gzip|bzip2|tar}} {{archivio.7z}} {{percorso/del/file_o_directory}}`
-
-- Elenca i tipi di archivio supportati:
-
-`7za i`
 
 - Elenca i contenuti in un archivio:
 

@@ -6,11 +6,11 @@
 
 - Start SC-IM:
 
-`scim {{path/to/file}}.csv`
+`scim {{path/to/file.csv}}`
 
 - Enter a string into the current cell:
 
-`< or >`
+`{{<|>}}`
 
 - Enter a numeric constant into the current cell:
 

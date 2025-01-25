@@ -1,11 +1,12 @@
 # pacman --deptest
 
 > Vérifie la satisfaction des dépendances et renvoie celles qui ne le sont pas.
-> Plus d'informations : <https://man.archlinux.org/man/pacman.8>.
+> Voir aussi: `pacman`.
+> Plus d'informations : <https://manned.org/pacman.8>.
 
 - Affiche les noms des paquets qui ne sont pas installés dans la liste :
 
-`pacman --deptest {{paquet1}} {{paquet2}}`
+`pacman --deptest {{paquet1 paquet2 ...}}`
 
 - Vérifie que le paquet installé a une version supérieure ou égale :
 

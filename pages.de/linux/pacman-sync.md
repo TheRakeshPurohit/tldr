@@ -1,7 +1,8 @@
 # pacman --sync
 
 > Arch Linux Paketverwaltungs-Werkzeug.
-> Weitere Informationen: <https://man.archlinux.org/man/pacman.8>.
+> Siehe auch: `pacman`.
+> Weitere Informationen: <https://manned.org/pacman.8>.
 
 - Installiere ein neues Paket:
 
@@ -25,7 +26,7 @@
 
 - Überschreibe widersprüchliche Dateien während einer Paketaktualisierung:
 
-`sudo pacman --sync --refresh --sysupgrade --overwrite {{pfad/zur/datei}}`
+`sudo pacman --sync --refresh --sysupgrade --overwrite {{pfad/zu/datei}}`
 
 - Synchronisiere und aktualisiere alle Pakete, ignoriere aber ein bestimmtes Paket (kann mehr als einmal angegeben werden):
 

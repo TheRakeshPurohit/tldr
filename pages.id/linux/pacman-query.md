@@ -1,7 +1,8 @@
 # pacman --query
 
 > Kegunaan manajer paket Arch Linux.
-> Informasi lebih lanjut: <https://man.archlinux.org/man/pacman.8>.
+> Guarda anche: `pacman`.
+> Informasi lebih lanjut: <https://manned.org/pacman.8>.
 
 - Tampilkan daftar paket yang diinstal beserta versinya:
 
