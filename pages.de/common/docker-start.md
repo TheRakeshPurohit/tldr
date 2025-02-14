@@ -1,7 +1,7 @@
 # docker start
 
 > Starte einen oder mehrere gestoppte Container.
-> Weitere Informationen: <https://docs.docker.com/engine/reference/commandline/start/>.
+> Weitere Informationen: <https://docs.docker.com/reference/cli/docker/container/start/>.
 
 - Zeige Hilfe:
 
@@ -17,4 +17,4 @@
 
 - Starte einen oder mehrere durch Leerzeichen getrennte Container:
 
-`docker start {{container}}`
+`docker start {{container1 container2 ...}}`

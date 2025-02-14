@@ -2,8 +2,8 @@
 
 > Gestore di pacchetti di Rust.
 > Gestisce progetti Rust ed i moduli dai quali sono dipendenti (detti crate).
-> Alcuni comandi aggiuntivi, come `cargo build`, hanno la propria documentazione.
-> Maggiori informazioni: <https://crates.io>.
+> Alcuni comandi aggiuntivi, come `build`, hanno la propria documentazione.
+> Maggiori informazioni: <https://doc.rust-lang.org/cargo>.
 
 - Cerca una crate:
 

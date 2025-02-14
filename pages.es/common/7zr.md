@@ -1,8 +1,8 @@
 # 7zr
 
 > Archivador de ficheros con un alto ratio de compresión.
-> Similar a `7z` excepto que sólo soporta ficheros `.7z`.
-> Más información: <https://www.7-zip.org>.
+> Similar a `7z` excepto que sólo soporta ficheros 7z.
+> Más información: <https://manned.org/7zr>.
 
 - [a]rchiva un archivo o directorio:
 
@@ -10,7 +10,7 @@
 
 - Cifra un archivo existente (incluidos los nombres de los archivos):
 
-`7zr a {{ruta/al/archivo.7z}} -p{{contraseña}} -mhe=on {{ruta/al/archivo.7z}}`
+`7zr a {{ruta/al/archivo.7z}} -p{{contraseña}} -mhe={{on}} {{ruta/al/archivo.7z}}`
 
 - E[x]trae un archivo conservando la estructura de directorios original:
 
@@ -18,7 +18,7 @@
 
 - E[x]trae un archivo a un directorio específico:
 
-`7zr x {{ruta/al/larchivo.7z}} -o{ruta/de/salida}}`
+`7zr x {{ruta/al/archivo.7z}} -o{{ruta/de/salida}}`
 
 - E[x]trae un archivo a `stdout`:
 
@@ -28,6 +28,6 @@
 
 `7zr l {{ruta/al/archivo.7z}}`
 
-- Lista los tipos de archivo disponibles:
+- Establece el nivel de compresión (más alto significa más compresión, pero más lento):
 
-`7zr i`
+`7zr a {{ruta/al/archivo.7z}} -mx={{0|1|3|5|7|9}} {{ruta/al/archivo_o_directorio}}`

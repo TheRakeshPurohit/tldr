@@ -3,7 +3,7 @@
 > OpenVPN client and daemon binary.
 > More information: <https://openvpn.net/>.
 
-- Connect to server using a config file:
+- Connect to server using a configuration file:
 
 `sudo openvpn {{path/to/client.conf}}`
 
@@ -17,7 +17,7 @@
 
 - Create a cryptographic key and save it to file:
 
-`openvpn --genkey --secret {{path/to/key}}`
+`openvpn --genkey secret {{path/to/key}}`
 
 - Try to set up a peer-to-peer tunnel on bob.example.com host with a static key:
 

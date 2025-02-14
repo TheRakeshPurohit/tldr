@@ -1,28 +1,20 @@
 # cut
 
-> Recorta campos provenientes de la entrada estándar o de archivos.
-> Más información: <https://www.gnu.org/software/coreutils/cut>.
+> Corta campos de `stdin` o archivos.
+> Más información: <https://www.gnu.org/software/coreutils/manual/html_node/cut-invocation.html>.
 
-- Recorta los primeros 16 caracteres de cada línea de la entrada estándar:
+- Imprime un rango específico de caracteres/campos de cada línea:
 
-`cut -c {{1-16}}`
+`{{comando}} | cut --{{characters|field}} {{1|1,10|1-10|1-|-10}}`
 
-- Recorta los primeros 16 caracteres de cada línea de los archivos especificados:
+- Imprime un rango de campos de cada línea con un [d]elimitador específico:
 
-`cut -c {{1-16}} {{archivo}}`
+`{{comando}} | cut --delimiter "{{,}}" --fields {{1}}`
 
-- Recorta todo desde el tercer caracter hasta el final de cada línea:
+- Imprime un rango de [c]aracteres de cada línea del archivo específico:
 
-`cut -c {{3-}}`
+`cut --characters {{1}} {{ruta/al/archivo}}`
 
-- Recorta el quinto campo de cada línea, usando los dos puntos como delimitadores de campos (por defecto el delimitador es tab):
+- Imprime [c]ampos específicos de líneas terminadas en `NUL` (por ejemplo, como en `find . -print0`) en lugar de nuevas líneas:
 
-`cut -d'{{:}}' -f{{5}}`
-
-- Recorta el segundo y décimo campo de cada línea, usando los punto y coma como delimitadores:
-
-`cut -d'{{;}}' -f{{2,10}}`
-
-- Recorta los campos del tercero al último de cada línea, usando los espacios como delimintadores:
-
-`cut -d'{{ }}' -f{{3-}}`
+`{{comando}} | cut --zero-terminated --fields {{1}}`

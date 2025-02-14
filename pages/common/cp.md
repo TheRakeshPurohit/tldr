@@ -1,7 +1,7 @@
 # cp
 
 > Copy files and directories.
-> More information: <https://www.gnu.org/software/coreutils/cp>.
+> More information: <https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html>.
 
 - Copy a file to another location:
 
@@ -18,6 +18,10 @@
 - Copy a directory recursively, in verbose mode (shows files as they are copied):
 
 `cp -vR {{path/to/source_directory}} {{path/to/target_directory}}`
+
+- Copy multiple files at once to a directory:
+
+`cp -t {{path/to/destination_directory}} {{path/to/file1 path/to/file2 ...}}`
 
 - Copy text files to another location, in interactive mode (prompts user before overwriting):
 

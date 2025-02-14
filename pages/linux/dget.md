@@ -1,11 +1,11 @@
 # dget
 
 > Download Debian packages.
-> More information: <https://manpages.debian.org/dget>.
+> More information: <https://manned.org/dget.1>.
 
 - Download a binary package:
 
-`dget {{package_name}}`
+`dget {{package}}`
 
 - Download and extract a package source from its `.dsc` file:
 

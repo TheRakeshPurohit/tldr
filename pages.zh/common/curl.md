@@ -2,7 +2,7 @@
 
 > 向 / 从一个服务器传输数据。
 > 支持大多数协议，包括 HTTP, FTP, 和 POP3.
-> 更多信息：<https://curl.se>.
+> 更多信息：<https://curl.se/docs/manpage.html>.
 
 - 将指定 URL 的内容下载到文件：
 
@@ -14,7 +14,7 @@
 
 - 下载文件，跟随 重定向，并且自动 续传（恢复）前序文件传输：
 
-`curl --remote-name --location --continue-at - {{http://example.com/filename}}`
+`curl --fail --remote-name --location --continue-at - {{http://example.com/filename}}`
 
 - 发送表单编码数据（`application/x-www-form-urlencoded` 的 POST 请求）：
 
@@ -30,7 +30,7 @@
 
 - 使用用户名和密码，授权访问服务器：
 
-`curl --user myusername:mypassword {{http://example.com}}`
+`curl --user {{用户名}} {{http://example.com}}`
 
 - 为指定资源使用客户端证书和密钥，并且跳过证书验证：
 
